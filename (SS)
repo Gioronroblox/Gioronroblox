@@ -1,0 +1,30 @@
+-- smoke tool script for khols admin
+if game.Players.LocalPlayer.Backpack:FindFirstChild("Smoke") then
+game.Players.LocalPlayer.Backpack:FindFirstChild("Smoke"):Destroy()
+end
+
+local activated = false
+local kholsmodule = loadstring(game:HttpGet("https://raw.githubusercontent.com/LazyNoobGithub/Khols-Admin-Module/main/modulescript"))()
+local smoketool = Instance.new("Tool",game.Players.LocalPlayer.Backpack)
+smoketool.Name = "Smoke"
+smoketool.RequiresHandle = false
+
+smoketool.Equipped:Connect(function()
+kholsmodule:runcmd("smoke me")
+end)
+
+smoketool.Activated:Connect(function()
+if activated == false then
+kholsmodule:runcmd("fire me 5")
+activated = true
+elseif activated == true then
+kholsmodule:runcmd("unfire")
+activated = false
+end
+end)
+
+smoketool.Unequipped:Connect(function()
+kholsmodule:runcmd("unsmoke me")
+end)
+
+kholsmodule:runcmd("unsmoke")
