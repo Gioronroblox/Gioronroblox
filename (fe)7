@@ -60,8 +60,8 @@ shootoff = 0
 runs = game:GetService("RunService")
 
 runs.Heartbeat:Connect(function()
-	Move(char["MeshPartAccessory"].Handle,fchar["Left Leg"].CFrame*CFrame.Angles(math.rad(90),0,math.rad(90)))
-	Move(char["Unloaded head"].Handle,fchar["Right Leg"].CFrame*CFrame.Angles(math.rad(-90),0,math.rad(90)))
+	Move(char["MeshPartAccessory"].Handle,fchar["Left Leg"].CFrame*CFrame.Angles(math.rad(0),90,math.rad(90)))
+	Move(char["Unloaded head"].Handle,fchar["Right Leg"].CFrame*CFrame.Angles(math.rad(0),-90,math.rad(90)))
 	Move(char["Front"].Handle,fchar["Torso"].CFrame*CFrame.Angles(0,math.rad(0),math.rad(0)))
 	Move(char["Faceless Medium Stone Gray Head"].Handle,fchar["Head"].CFrame*CFrame.Angles(0,math.rad(0),0))
 	if not gunmode then do
