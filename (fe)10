@@ -687,7 +687,7 @@ local function reanimate()
 
 	local accessorylimbs={
         {meshid="13778226115",textureid="13779858015",C0=angles(0,0,rad(0)),Name="Torso"},
-        {meshid="13610799467",textureid="11159284657",C0=angles(rad(90),rad(0),rad(0)),Name="Left Arm"},
+        {meshid="13610799467",textureid="13610799583",C0=angles(rad(90),rad(0),rad(0)),Name="Left Arm"},
         {meshid="11159370334",textureid="11159284657",C0=angles(rad(-90),rad(0),rad(90)),Name="Right Arm"},
         {meshid="11159370334",textureid="11159285454",C0=angles(rad(90),rad(0),rad(90)),Name="Left Leg"},
         {meshid="11263221350",textureid="11263219250",C0=angles(rad(-90),rad(0),rad(90)),Name="Right Leg"}
