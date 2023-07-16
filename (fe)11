@@ -1,6 +1,3 @@
-if not isfile("GelatekHub/Scripts/Chips.mp3") then
-	writefile("GelatekHub/Scripts/Chips.mp3", game:HttpGet("https://github.com/StrokeThePea/GelatekHubSongs/blob/main/Chips.mp3?raw=true"))
-
 local Charar = game.Players.LocalPlayer.Character
 Charar["MeshPartAccessory"].Name = "Leg"
 
@@ -1487,13 +1484,6 @@ mouse.KeyDown:connect(function(key)
 		end
 	end
 end)
-
- 
-
-
-
-Music.SoundId = getsynasset("GelatekHub/Scripts/Chips.mp3")
-
 
 -------------------------------------------------------
 --Start Animations--
