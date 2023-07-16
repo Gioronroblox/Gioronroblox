@@ -1185,13 +1185,6 @@ RHe.Locked = true
 RHe.CanCollide = false
 RHe.Transparency = 1
 
-local hat2 = gp(cplayer, "Tommy Hilfiger Balloon", "Accessory")
-local handle2 = gp(hat2, "Handle", "BasePart")
-local att2 = gp(handle2, "att1_Handle", "Attachment")
-att2.Parent = RHe
-att2.Position = Vector3.new(0, -0.55, -0.15)
-att2.Rotation = Vector3.new(-90, 0, 90)
-
 PMesh = IT("SpecialMesh")
 RHe.formFactor =  "Symmetric"
 PMesh.MeshType = "FileMesh"
