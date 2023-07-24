@@ -63,18 +63,6 @@ att2.Rotation = Vector3.new(90, 90, 0)
 local folder = game:GetObjects('rbxassetid://10012397982')[1]
 folder.Parent = game.Players.LocalPlayer.Character
 
-local lp = game:GetService("Players").LocalPlayer
-local rs = game:GetService("RunService")
-local stepped = rs.Stepped
-local heartbeat = rs.Heartbeat
-local renderstepped = rs.RenderStepped
-local sg = game:GetService("StarterGui")
-local ws = game:GetService("Workspace")
-local cf = CFrame.new
-local v3 = Vector3.new
-local v3_0 = Vector3.zero
-local inf = math.huge
-
 -- big shoutout for my homie littlepuppypooper for giving the fix for the movement raycast
 -- -padero
 
