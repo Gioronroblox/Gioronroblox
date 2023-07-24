@@ -400,7 +400,7 @@ run:BindToRenderStep(username..userid.."partmaintain",Enum.RenderPriority.Camera
 		gun.Archivable = false
 
 game:GetService("Players").LocalPlayer.Character["Meshes/archangelrifleAccessory"].Handle.att1_Handle.Parent = gun
-gun.att1_Handle.Rotation = Vector3.new(-0,-180,-0)
+gun.att1_Handle.Rotation = Vector3.new(-0,-180,-180)
 gun.att1_Handle.Position = Vector3.new(0,0,-0) --PlaneModel
 
 	end
