@@ -65,7 +65,7 @@ local hat2 = gp(cplayer, "Meshes/archangelrifleAccessory", "Accessory")
 local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Right Arm"]
-att2.Position = Vector3.new(0, -2.5, -0.5) 
+att2.Position = Vector3.new(0, -2, -0.5) 
 att2.Rotation = Vector3.new(0, -90, 90)
 
 _G.loop = true
