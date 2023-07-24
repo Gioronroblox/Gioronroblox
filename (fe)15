@@ -1,13 +1,8 @@
 local Charar = game.Players.LocalPlayer.Character
 Charar["MeshPartAccessory"].Name = "Leg"
 
-game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{Text="Welcome to Melon's FE Scripts",Color=Color3.fromRGB(255, 255, 255)})
-game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{Text="You are using: Mad/Slayer",Color=Color3.fromRGB(255, 255, 255)})
-
 player = game.Players.LocalPlayer
 cplayer = player.Character
-
-game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{Text="Status: Loading Reanimate...",Color=Color3.fromRGB(255, 255, 255)})
 
 loadstring(game:HttpGet(('https://pastebin.com/raw/a104Jcs5'),true))()
 
@@ -28,8 +23,6 @@ local function gp(parent, name, className)
     end
     return nil
 end
-
-game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{Text="Status: Aligning...",Color=Color3.fromRGB(255, 255, 255)})
 
 task.wait(0.5)
 
@@ -67,6 +60,13 @@ local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Left Leg"]
 att2.Position = Vector3.new(-0, -0, 0)
 att2.Rotation = Vector3.new(90, 90, 0)
+
+local hat2 = gp(cplayer, "Meshes/archangelrifleAccessory", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Right Arm"]
+att2.Position = Vector3.new(0, -2.5, -0.5) 
+att2.Rotation = Vector3.new(0, -90, 90)
 
 _G.loop = true
 local player = game.Players.LocalPlayer
@@ -280,13 +280,6 @@ Naifu = New("Part",chara,"Naifu",{BrickColor = BrickColor.new("Dark stone grey")
 Mesh = New("SpecialMesh",Naifu,"Mesh",{Scale = Vector3.new(0.5, 0.699999988, 0.5),VertexColor = Vector3.new(0.5, 0.5, 0.5),MeshId = "rbxassetid://54430772",TextureId = "rbxassetid://54430066",MeshType = Enum.MeshType.FileMesh,})
 Weld = New("ManualWeld",Naifu,"Weld",{Part0 = Naifu,Part1 = LeftArm,C0 = CFrame.new(0, 0, 0, -0.556669891, -0.766044796, -0.321393907, -0.663414657, 0.642787278, -0.383021802, 0.499999702, 7.3450633e-07, -0.866025567),C1 = CFrame.new(-0.0408859253, -1.28767514, 0.650009155, -0.866025388, 0, -0.500000238, 0, 1, 0, 0.500000238, 0, -0.866025388),})
 TEC9 = New("Part",chara,"TEC9",{BrickColor = BrickColor.new("Dark stone grey"),Transparency = 1,Transparency = 1,FormFactor = Enum.FormFactor.Custom,Size = Vector3.new(0.200000018, 1.20000005, 1.79999959),CFrame = CFrame.new(-56.3000031, 1.29999971, -46.6999931, -1, -1.00172471e-07, -1.61844298e-08, 5.16190539e-08, -8.19882651e-09, 1, -1.29974794e-07, 1, -4.67569983e-08),CanCollide = false,BottomSurface = Enum.SurfaceType.Smooth,TopSurface = Enum.SurfaceType.Smooth,Color = Color3.new(0.388235, 0.372549, 0.384314),})
-
-local hat2 = gp(cplayer, "Meshes/archangelrifleAccessory", "Accessory")
-local handle2 = gp(hat2, "Handle", "BasePart")
-local att2 = gp(handle2, "att1_Handle", "Attachment")
-att2.Parent = TEC9
-att2.Position = Vector3.new(0, -2.5, -0.5) 
-att2.Rotation = Vector3.new(0, -90, 90)
 
 Mesh = New("SpecialMesh",TEC9,"Mesh",{Scale = Vector3.new(0.300000012, 0.300000012, 0.300000012),MeshId = "rbxassetid://742046473",TextureId = "rbxassetid://742046691",MeshType = Enum.MeshType.FileMesh,})
 Weld = New("ManualWeld",TEC9,"Weld",{Part0 = TEC9,Part1 = RightArm,C0 = CFrame.new(0, 0, 0, -1, 5.16190539e-08, -1.29974794e-07, -1.00172471e-07, -8.19882651e-09, 1, -1.61844298e-08, 1, -4.67569983e-08),C1 = CFrame.new(-0.0999984741, -1.70001817, -7.62939453e-06, -1, 0, 0, 0, 1, 0, 0, 0, -1),})
